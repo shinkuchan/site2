@@ -1,0 +1,37 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.pixel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #444444;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    transition: all linear 0.3s;
+    text-align: center;
+}
+
+.cell-red {background-color: red;}
+.cell-yellow {background-color: yellow;}
+.cell-blue {background-color: blue;}
+.cell-green {background-color: green;}
+.cell-purple {background-color: purple;}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(20, 22px);
+    grid-template-rows: repeat(20, 22px);
+}
